@@ -48,9 +48,27 @@ Then, open the localhost URL displayed in the terminal to use the app.
 ## 📃 Dataset Information  
 This project uses the **EMNIST Balanced dataset**. If you want to download it manually, you can find it at the following links:
 
+
+
 - [Official EMNIST Dataset](https://www.nist.gov/itl/products-and-services/emnist-dataset)
 - [EMNIST Dataset on Kaggle](https://www.kaggle.com/datasets/crawford/emnist)
 
+## 🔤 Label Mappings
+The dataset maps class indices to Unicode character codes. Here’s a sample:
+
+0 -> 48 (0)  
+1 -> 49 (1)  
+10 -> 65 (A)  
+11 -> 66 (B)  
+...  
+35 -> 90 (Z)  
+36 -> 97 (a)  
+37 -> 98 (b)  
+...  
+46 -> 116 (t)
+
+For the full mappings, check the dataset files included with the dataset. 📜
+
 ---
-Looking forward to your feedback! 🚀✨
+Looking forward to your feedback! 🚀✨  
 
