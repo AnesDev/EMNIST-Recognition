@@ -1,22 +1,19 @@
 # 🖊️ EMNIST Handwritten Text Recognition  
 
-🚀 **Current Status:** Model is improving but still needs optimization.🔄  
+🚀 **Current Status:** Model is improving but still needs optimization. 🔄  
 
 ## 📌 Overview  
-This project is a web-based application that allows users to draw letters or digits, which are then recognized by a Convolutional Neural Network (CNN) trained on the **EMNIST dataset**. Built with **PyTorch** and **Streamlit**, this app provides a simple and interactive way to test handwritten text recognition.  
+This project is a web-based application that allows users to draw letters or digits, which are then recognized by a Convolutional Neural Network (CNN) trained on the **EMNIST Balanced dataset**. Built with **PyTorch** and **Streamlit**, this app provides a simple and interactive way to test handwritten text recognition.  
 
 ## ✨ Features  
-- 🖌️ **Canvas** to draw letters/digits  
+- 🎨 **Canvas** to draw letters/digits  
 - 📸 **Image preprocessing** for better model input  
-- 🧠 **CNN-based classifier** trained on the EMNIST dataset  
+- 🧠 **CNN-based classifier** trained on the EMNIST Balanced dataset  
 - 🌐 **Web-based UI** powered by Streamlit  
 
 ## 📂 Project Structure  
 ```bash
 EMNIST-Recognition/
-│── data/               # Contains the dataset CSV files
-│   ├── train.csv       # Training data
-│   ├── test.csv        # Test data
 │── src/                # Source code for model and training
 │   ├── model_class.py  # CNN Model definition
 │   ├── notebook.ipynb  # Jupyter Notebook used for training and exporting model state
@@ -26,8 +23,7 @@ EMNIST-Recognition/
 │── README.md           # Project documentation
 ```
 
-## 🏗️ Installation  
-
+## 🏠 Installation  
 Clone the repository:  
 
 ```bash
@@ -40,7 +36,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-## 🚀 Usage
+## 🚀 Usage  
 Run the Streamlit app:
 
 ```bash
@@ -48,6 +44,13 @@ streamlit run app.py
 ```
 
 Then, open the localhost URL displayed in the terminal to use the app.
----
 
+## 📃 Dataset Information  
+This project uses the **EMNIST Balanced dataset**. If you want to download it manually, you can find it at the following links:
+
+- [Official EMNIST Dataset](https://www.nist.gov/itl/products-and-services/emnist-dataset)
+- [EMNIST Dataset on Kaggle](https://www.kaggle.com/datasets/crawford/emnist)
+
+---
 Looking forward to your feedback! 🚀✨
+
