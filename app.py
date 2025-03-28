@@ -16,7 +16,7 @@ st.subheader("Draw a character and classify it")
 
 canvas_result = st_canvas(
     fill_color="black",
-    stroke_width=15,
+    stroke_width=10,
     stroke_color="white",
     background_color="black",
     width=280,
