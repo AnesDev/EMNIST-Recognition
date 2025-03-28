@@ -29,7 +29,7 @@ if st.button("Classify Drawing"):
     if canvas_result.image_data is not None:
         img = Image.fromarray((canvas_result.image_data[:, :, 0]).astype(np.uint8))
         img = img.resize((28, 28))
-        img = Image.eval(img, lambda x: 255 - x)
+        img = img.convert("L")
         # Preprocess the image
         transform = transforms.Compose([
             transforms.ToTensor(),
