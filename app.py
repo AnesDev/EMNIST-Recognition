@@ -1,6 +1,6 @@
 import torch
 import torchvision.transforms as transforms
-from src.model_class import CNN 
+from src.model import CNN 
 import streamlit as st
 import numpy as np
 from PIL import Image
