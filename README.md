@@ -19,8 +19,7 @@ Handwritten-Character-Recognition/
 │   ├── dataset/                 # All image data (digit_*, lower_*, upper_*)
 │   ├── fonts/                   # Font .ttf files used to generate images
 │   ├── augmentations.py         # Augmentation functions
-│   ├── generate_images.py       # Script to generate dataset using fonts + augmentations
-│   └── dataset.zip              # Zipped dataset folder
+│   └── generate_images.py       # Script to generate dataset using fonts + augmentations
 │
 ├── src/
 │   ├── model_class.py           # CNN Model definition
