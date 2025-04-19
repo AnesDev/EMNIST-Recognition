@@ -5,6 +5,7 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 from streamlit_drawable_canvas import st_canvas
+import matplotlib.pyplot as plt
 
 model = CNN()
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -46,13 +47,19 @@ def idx_to_char(idx):
 if st.button("Classify Drawing"):
     if canvas_result.image_data is not None:
         img = Image.fromarray((canvas_result.image_data[:, :, 0]).astype(np.uint8))
-        img = img.convert("L")
+
         # Preprocess the image
         transform = transforms.Compose([
             transforms.ToTensor(),
             transforms.Normalize((0.5,), (0.5,))
         ])
         img_tensor = transform(img).unsqueeze(0)
+
+        img_transformed = img_tensor.squeeze().numpy()
+        img_transformed = np.clip(img_transformed, 0, 1) 
+        img_transformed = (img_transformed * 255).astype(np.uint8)
+
+        st.image(img_transformed, caption="Transformed Image", use_container_width=True)
 
         with torch.no_grad():
             output = model(img_tensor)
